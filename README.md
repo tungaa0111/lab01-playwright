@@ -1,8 +1,8 @@
-Lab 01 – Playwright Setup
+\# Lab 01 – Playwright Setup
 
 
 
-1\. Төслийн тухай
+\## 1. Төслийн тухай
 
 
 
@@ -10,37 +10,29 @@ Lab 01 – Playwright Setup
 
 
 
-2\. Ашигласан технологи
+\## 2. Ашигласан технологи
 
 
 
-Node.js
+\- Node.js
+
+\- Playwright
+
+\- TypeScript
+
+\- Chromium
+
+\- Firefox
+
+\- WebKit
 
 
 
-Playwright
+\## 3. Төслийн бүтэц
 
 
 
-TypeScript
-
-
-
-Chromium
-
-
-
-Firefox
-
-
-
-WebKit
-
-
-
-3\. Төслийн бүтэц
-
-
+```text
 
 lab01-playwright/
 
@@ -58,23 +50,51 @@ lab01-playwright/
 
 └── README.md
 
+```
 
 
-4\. Суулгах заавар
+
+\## 4. Суулгах заавар
 
 
+
+Төслийг татаж авсны дараа дараах командыг ажиллуулна.
+
+
+
+```bash
 
 npm install
 
+```
+
+
+
+Browser-уудыг суулгах:
+
+
+
+```bash
+
 npx playwright install
 
+```
 
 
-5\. Тест ажиллуулах
+
+\## 5. Тест ажиллуулах
 
 
+
+Бүх тестийг ажиллуулах:
+
+
+
+```bash
 
 npx playwright test
+
+```
 
 
 
@@ -82,85 +102,43 @@ HTML тайлан харах:
 
 
 
+```bash
+
 npx playwright show-report
 
-
-
-6\. Тестийн үр дүн
-
-
-
-Playwright тестийг 3 browser дээр ажиллуулсан.
+```
 
 
 
-Browser
+\## 6. Тестийн үр дүн
 
 
 
-Passed
+Тестийг Chromium, Firefox болон WebKit гэсэн 3 browser дээр ажиллуулсан.
 
 
 
-Failed
+| Browser | Passed | Failed |
+
+|:---|:---:|:---:|
+
+| Chromium | 2 | 0 |
+
+| Firefox | 2 | 0 |
+
+| WebKit | 2 | 0 |
+
+| \*\*Нийт\*\* | \*\*6\*\* | \*\*0\*\* |
 
 
 
-Chromium
+\*\*Үр дүн:\*\* Нийт 6 тест амжилттай ажилласан. Алдаатай тест гараагүй.
 
 
 
-2
+\## 7. Дүгнэлт
 
 
 
-0
-
-
-
-Firefox
-
-
-
-2
-
-
-
-0
-
-
-
-WebKit
-
-
-
-2
-
-
-
-0
-
-
-
-Нийт
-
-
-
-6
-
-
-
-0
-
-
-
-Нийт 6 тест амжилттай ажилласан.
-
-
-
-7\. Дүгнэлт
-
-
-
-Playwright тестийн орчныг амжилттай тохируулж, Chromium, Firefox болон WebKit browser дээр автомат тестүүдийг ажиллуулан шалгав.
+Энэхүү лабораторийн ажлаар Playwright тестийн орчныг амжилттай тохируулж, Chromium, Firefox болон WebKit browser дээр автомат тест ажиллуулж сурлаа.
 
